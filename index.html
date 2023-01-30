@@ -92,7 +92,8 @@ de koelkast en laat tijdens het voorverwarmen van de oven op kamertemperatuur ko
 <h2>Bedankt voor het lezen van dit recept. Laat ons weten wat je ervan vond!</h2>
 </p>
 <p>
-    &nbsp; &nbsp;Gegevens
+    <fieldset>
+    <legend>Gegevens:</legend>
 <form onsubmit="">
     <label for="full name field">Naam:</label>
     <input type="text" id="full-name-field" name="name"/>
@@ -100,36 +101,47 @@ de koelkast en laat tijdens het voorverwarmen van de oven op kamertemperatuur ko
     <br>
     <label for="full-name-field">Email:</label>
     <input type="text" id="full name field" name="email"/>
+</fieldset>
 </form>
 <br>
 <br>
-&nbsp; &nbsp; Jouw review
+<fieldset>
+    <legend>Jouw review</legend>
 <br>
 <br>
-Hoe heb je dit recept gevonden?
-<br>
-Zou je dit recept willen uitproberen?
-<br>
-<br>
-<input type="radio"/>Nee &nbsp;
-<input type="radio"/>Ja &nbsp;
-<input type="radio"/>Misschien
-<br>
-<br>
-<label for="message-field">Opmerkingen:</label>
-<br>
-<textarea name="message" id="message-field" cols="30" rows="10" placeholder="Wat vond je van het recept?"></textarea>
-<br>
-<br>
-<label for="subscribe-to-newsletter">
-    <input type="checkbox" checked id="subscribe-to-newsletter" name="subscribe-to-newsletter"/>
-    Schrijf me in voor de nieuwsbrief
-</label>
-<br>
-<br>
-<button type="submit">Verzenden</button>
+<form action="/action_page.php">
+    <label for="anders">Hoe heb je dit recept gevonden?:</label>
+    <select name="anders" id="anders">
+        <optgroup label="Waar?">
+            <option value="viavia">Anders</option>
+            <option value="tiktok">ViaVia</option>
+        </optgroup>
+    </select>
+    <br>
+    <br>
+    Zou je dit recept willen uitproberen?
+    <br>
+    <br>
+    <input type="radio"/>Nee &nbsp;
+    <input type="radio"/>Ja &nbsp;
+    <input type="radio"/>Misschien
+    <br>
+    <br>
+    <label for="message-field">Opmerkingen:</label>
+    <br>
+    <textarea name="message" id="message-field" cols="30" rows="10"
+              placeholder="Wat vond je van het recept?"></textarea>
+    <br>
+    <br>
+    <label for="subscribe-to-newsletter">
+        <input type="checkbox" checked id="subscribe-to-newsletter" name="subscribe-to-newsletter"/>
+        Schrijf me in voor de nieuwsbrief
+    </label>
+    <br>
+    <br>
+    <button type="submit">Verzenden</button>
 </form>
-
+</fieldset>
 </p>
 
 
